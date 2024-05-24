@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import "./About.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -14,6 +15,25 @@ import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import profile from "./profile.jpg";
 
 const About = () => {
+  const words = [
+    "amazing",
+    "wonderful",
+    "great",
+    "exciting",
+    "interesting",
+    "fresh",
+  ];
+
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="wrapper" id="#about">
       <div className="row">
@@ -22,13 +42,19 @@ const About = () => {
             Full Stack <br />
             Developer
           </h1>
-          <p className="p">
+          <p className="p typing">
             I craft seamless and dynamic web experiences from end to end.
             <br />
             Specializing in both back-end and front-end development, I transform
             ideas into reality.
           </p>
-          <p>Let's build something amazing together!</p>
+          <p>
+            Let's build something{" "}
+            <span className="display">
+              {words[currentWordIndex].toLocaleUpperCase()}
+            </span>{" "}
+            together!
+          </p>
 
           <div className="tech-icons-container">
             <br />

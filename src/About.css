@@ -64,3 +64,53 @@ img {
   margin: 20px;
   font-family: Arial, sans-serif;
 }
+.display {
+  font-weight: bold;
+  color: rgb(5, 238, 145);
+  font-style: italic;
+  font-size: large;
+}
+/* Typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Deleting effect */
+/* @keyframes deleting {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+} */
+
+/* Cursor effect */
+@keyframes blink {
+  /* 50% {
+    border-color: transparent;
+  }  */
+}
+
+/* Container for the typing effect */
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid black; /* Cursor style */
+  white-space: nowrap;
+  animation: typing 2s steps(10, end), blink 0.7s step-end infinite alternate;
+}
+
+/* Animate the word change */
+p {
+  position: relative;
+  display: inline-block;
+  color: black;
+  background-color: beige;
+  padding: 5px;
+}

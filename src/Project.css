@@ -23,8 +23,8 @@ h1 {
 .project-card:hover {
   transform: translateY(-5px);
   /* z-index: -1; */
-  background-color: black;
-  color: bisque;
+  /* background-color: black;
+  color: bisque; */
 }
 
 .project-image {
