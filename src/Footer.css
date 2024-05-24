@@ -1,0 +1,29 @@
+.social-media-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.social-media-buttons a {
+  color: #fafafa;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-media-buttons a:hover {
+  color: #007bff; /* Change this to the color you prefer for hover effect */
+}
+.footer-body {
+  background-color: black;
+  color: white;
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  gap: 90px;
+  align-items: center;
+  margin-top: 50px;
+}
+p {
+  font-weight: bold;
+}

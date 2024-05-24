@@ -1,0 +1,35 @@
+/* Select all <p> tags */
+
+/* On hover, change background color */
+/* body:hover {
+  background-color: beige;
+} */
+
+.p-tags {
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+  border-radius: 2px;
+  width: 200px;
+  min-height: 300px;
+  background-color: beige;
+  font-style: italic;
+  padding: 20px;
+  border-radius: 50px;
+}
+.row-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.p-tags:hover {
+  background-color: black;
+  color: bisque;
+  /* transform: translateY(-5px); */
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
