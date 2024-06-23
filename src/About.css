@@ -107,7 +107,7 @@ img {
 }
 
 /* Animate the word change */
-p {
+.p {
   position: relative;
   display: inline-block;
   color: black;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import emailjs from "emailjs";
+import emailjs from "emailjs-com";
 import "./Contact.css";
 import Footer from "./Footer";
 
